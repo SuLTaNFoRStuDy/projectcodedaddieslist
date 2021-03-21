@@ -3,47 +3,25 @@
 <div class="row">
 
   <div class="row">
-    <div class="col s4">
+  {% for posting in final_posting %}
+  
+      <div class="col s4">
       <div class="card">
         <div class="card-image">
-          <a href="/"><img src="/" alt="" /></a>
+          <a href="{{posting.1}}"><img src="{{posting.3}}" alt="" /></a>
         </div>
         <div class="card-content">
-          <p>Test</p>
+          <p>{{posting.0}}</p>
         </div>
         <div class="card-action">
-          <a href="/">View Listing : Price test</a>
+          <a href="/">View Listing : Price {{posting.2}}</a>
         </div>
       </div>
     </div>
+  {% endfor %}
 
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image">
-          <a href="/"><img src="/" alt="" /></a>
-        </div>
-        <div class="card-content">
-          <p>Test</p>
-        </div>
-        <div class="card-action">
-          <a href="/">View Listing : Price test</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image">
-          <a href="/"><img src="/" alt="" /></a>
-        </div>
-        <div class="card-content">
-          <p>Test</p>
-        </div>
-        <div class="card-action">
-          <a href="/">View Listing : Price test</a>
-        </div>
-      </div>
-    </div>
+
   </div>
 </div>
 
